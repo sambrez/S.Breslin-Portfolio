@@ -39,6 +39,8 @@ h1 {
 }
 
 a {
+    display: flex;
+    flex-wrap: wrap;
     color:#355531;
 }
 
@@ -109,6 +111,25 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
+
+footer {
+    width: 100%;
+    height: 150px;
+    margin: 20px;
+    padding: 10px;
+    border-top: 5px solid #fff;
+}
+
+.footer h2 {
+    float: left;
+    display: inline;
+    font-size: 40px;
+}
+
+footer ul {
+    display: inline;
+    float: left;
+}
   
   @media screen and (max-width: 1232px) {
     header {
@@ -130,13 +151,16 @@ main {
   }
 
   @media screen and (max-width 768px) {
-    .header nav {
+    main,
+    nav {
         flex-direction: column;
     }
+    aside {
+        order: 2;
+        background-color: #b0bf2d;
   }
   
-  @media screen and (max-width: 576px) {
+  /* @media screen and (max-width: 576px) {
     header {
       background-color: #8ac4ff;
-    }
-    
+    } */
