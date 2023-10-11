@@ -2,23 +2,26 @@ body {
     background-color: #7655a3;
 }
 
-header {
-    background-color: #9966b5;
-}
-
 .header {
+    height: 600px;
+    width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 22px;
+    background-image: url(../images/img\ 1.jpg);
+    background-size: 100% 600px;
 }
 
 h1 {
-    font-size: 50px;
-    color: #471071;
+    font-size: 85px;
+    color: #355531;
     display: inline-block;
+    margin: 30px;
+    padding 20px;
 }
 
 .header nav {
-    font-size: 22px;
+    font-size: 35px;
+    margin: 28px;
+    padding: 18px;
     float: right;
 }
 
@@ -29,4 +32,8 @@ h1 {
 .header ul li {
     display: inline-block;
     margin: 10px
+}
+
+a {
+    color:#355531;
 }
