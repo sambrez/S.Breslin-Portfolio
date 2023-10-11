@@ -1,5 +1,8 @@
 body {
-    background-color: #7655a3;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    background-color: #c2bacd;
 }
 
 .header {
@@ -8,6 +11,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-image: url(../images/img\ 1.jpg);
     background-size: 100% 600px;
+    margin-bottom: 25px;
 }
 
 h1 {
@@ -39,16 +43,100 @@ a {
 }
 
 aside {
-  float: left;
-  height: 100%;
-  width: 25%;
-  background: color #806c33;
-  margin-left: 15px;
-  padding: 15px;
-  font-family:'Times New Roman', Times, serif;
-  font-size: 40px;
+    float: left;
+    height: 100%;
+    width: 35%;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 15px 15px 15px 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+    border-right: 5px solid #fff;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline 5px solid rgb(66, 62, 62);
+    margin: 20px 20px 50px 20px;
+}
+
+#profile-pic {
+    display: block;
+    max-width: 100%;
+    height: 400px;
+    justify-content: center;
+}
+
+aside p {
+    font-size: 16px;
+    color:#355531;
+    text-align: center;
+    margin-top: 15px;
 }
 
 .sidebar {
-    margin: 35px;
+    
 }
+
+#am {
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #355531;
+}
+
+#p {
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #355531;
+}
+
+#cm {
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #355531;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+  @media screen and (max-width: 1232px) {
+    header {
+        text-align: center;
+      }
+    nav {
+      background-color: #677060;
+      width: 100%;
+      text-align: center;
+    }
+    .header nav {
+        margin: 0px;
+      }
+    nav a {
+        margin-right: 15px;
+        margin-left: 15px;
+        color: #fff;
+      }
+  }
+
+  @media screen and (max-width 768px) {
+    .header nav {
+        flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    header {
+      background-color: #8ac4ff;
+    }
+    
