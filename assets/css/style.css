@@ -37,3 +37,18 @@ h1 {
 a {
     color:#355531;
 }
+
+aside {
+  float: left;
+  height: 100%;
+  width: 25%;
+  background: color #806c33;
+  margin-left: 15px;
+  padding: 15px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 40px;
+}
+
+.sidebar {
+    margin: 35px;
+}
