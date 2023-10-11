@@ -1,0 +1,32 @@
+body {
+    background-color: #7655a3;
+}
+
+header {
+    background-color: #9966b5;
+}
+
+.header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 22px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #471071;
+    display: inline-block;
+}
+
+.header nav {
+    font-size: 22px;
+    float: right;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header ul li {
+    display: inline-block;
+    margin: 10px
+}
