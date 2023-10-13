@@ -1,181 +1,10 @@
-/* * {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial;
-    margin: 0;
-}
-  
-header {
-    text-align: left;
-    height: 600px;
-    width: 100%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: url(../images/img\ 1.jpg);
-    background-size: 100% 600px;
-}
-
-h1 {
-    font-size: 85px;
-    color: #355531;
-    display: inline-block;
-    margin: 30px;
-    padding: 20px;
-}
-
-nav {
-    display: flex;
-    background-color: #576356;
-    padding: 8px;
-    
-}
-
-nav a {
-    color: #dde2e7;
-    font-size: 30px;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-}
-
-footer {
-    width: 100%;
-    height: 150px;
-    margin: 20px;
-    padding: 10px;
-    border-top: 5px solid #fff;
-}
-
-.footer h2 {
-    float: left;
-    display: inline;
-    font-size: 40px;
-    margin-top: 50px;
-    margin-right: 260px;
-}
-
-footer ul li {
-    display: inline;
-    float: left;
-    list-style-type: none;
-    margin-top: 50px;
-}
-
-.footer a {
-    display: inline;
-    font-size: 25px;
-    margin: 60px;
-}
-
-#contact-me {
-    height: 300px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #355531;
-}
-
-aside {
-    display: block;
-    flex: 1;
-    background-color: #b9c6ae;
-    padding: 15px 15px 15px 20px;
-    text-align: center;
-    height: 100%;
-    width: 40%;
-    float: left;
-    margin-right: 15px;
-    margin-left: 15px;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 40px;
-    border-right: 5px solid #fff;
-}
-
-#profile-pic {
-    display: block;
-    max-width: 100%;
-    height: 400px;
-    justify-content: center;
-    margin: 20px;
-}
-
-aside p {
-    font-size: 16px;
-}
-
-
-#about-me {
-    height: 300px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #355531;
-}
-
-#projects {
-    height: 300px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #355531;
-}
-
-div {
-    display: block;
-    flex: 3;
-}
-  
-.works {
-    flex: 4;
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-  
-.blocks {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    flex: 0 0 400px;
-}
-  
-.blocks header {
-    padding: 20px;
-}
-  
-  
-.blocks img {
-    width: 100%;
-}
-
-
-  
-  @media screen and (min-width: 1235px) {
-    main,
-    nav {
-      flex-direction: column;
-    }
-  } */
-
 * {
     box-sizing: border-box;
 }
 
 body {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
     background-color: #e1e3e1;
@@ -200,6 +29,7 @@ h1 {
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     background-color: #576356;
     padding: 8px;
     font-size: 35px;
@@ -239,11 +69,12 @@ main {
 aside {
     display: inline-block;
     height: auto;
-    width: 40%;
+    width: 38%;
     padding: 15px 15px 15px 23px;
     font-family:'Times New Roman', Times, serif;
     font-size: 40px;
     border-right: 3px solid #fff;
+    align-items: center;
 }
 
 aside h2 {
@@ -257,8 +88,8 @@ aside h2 {
 #profile-pic {
     display: block;
     max-width: 100%;
-    height: 400px;
     justify-content: center;
+    position: relative;
 }
 
 aside p {
@@ -269,11 +100,13 @@ aside p {
 }
 
 div {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
     height: 100%;
     width: 60%;
     margin-top: 25px;
     justify-content: center;
+    align-items: center;
 }
 
 div h1 {
@@ -286,6 +119,7 @@ div h1 {
     font-size: 40px;
     display: block;
     border-bottom: 1px solid #355531;
+    width: 75%;;
 }
 
 div a {
@@ -294,8 +128,9 @@ div a {
 
 section {
     display: block;
-    margin: 5px 15px 15px 15px;
     width: 100%;
+    margin: 15px;
+    justify-content: center;
 }
 
 .works h2 {
@@ -315,15 +150,11 @@ section {
 }
 
 #bootcamp {
-    display: inline;
-    float: left;
     width: 400px;
     margin-left: 20px;
 }
 
 #soon {
-    display: inline;
-    float: right;
     width: 400px;
     margin-right: 20px;
 }
@@ -352,6 +183,8 @@ section {
 }
 
 footer {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 150px;
     padding: 10px;
@@ -369,40 +202,66 @@ footer {
     color: #dde2e7;
 }
 
-footer ul li {
-    display: inline;
-    float: left;
+.end { 
+    float: right;
     list-style-type: none;
-    margin-top: 50px;
+    justify-content: center;
+    width: auto;
+    margin-top: 55px;
+}
+
+.footer p {
+    display: inline;
 }
 
 .footer a {
-    display: inline;
     font-size: 25px;
     margin: 60px;
     color: #dde2e7;
 }
-  
-  @media screen and (max-width: 1279px) {
-    header {
-        text-align: center;
-      }
-    nav {
-      background-color: #677060;
-      width: 100%;
-      text-align: center;
-    }
-    .header nav {
-        margin: 0px;
-        text-align: center;
-      }
-    .header nav a {
-        margin-right: 15px;
-        margin-left: 15px;
-        color: #fff;
-        text-align: center;
-      }
-  }
 
-  
+@media screen and (max-width: 992px) {
+    main,
+    nav {
+        flex-direction: column;
+    }
+
+    #am {
+        border: none;
+    }
+
+    #p {
+        border: none;
+    }
+
+    div {
+        order: 2;
+        margin: 2px;
+    }   
+
+    aside {
+        width: auto;
+        align-items: center;
+        border: none;
+    }
+
+    .blocks {
+        width: 100%;
+    }
+
+    div {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #screenshot2 {
+        width: auto;
+    }
+
+    #screenshot3 {
+        width: auto;
+    }  
+}
   
