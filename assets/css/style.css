@@ -215,6 +215,14 @@ nav a {
     text-align: center;
 }
 
+#am {
+    border-right: 1px solid #fff;
+}
+
+#p {
+    border-right: 1px solid #fff;
+}
+
 header a {
     display: flex;
     flex-wrap: wrap;
@@ -240,8 +248,10 @@ aside {
 
 aside h2 {
     text-align: center;
-    text-decoration: underline 5px solid rgb(66, 62, 62);
-    margin: 20px 20px 50px 20px;
+    color:#355531;
+    margin: 20px 20px 20px 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #355531;
 }
 
 #profile-pic {
@@ -262,25 +272,40 @@ div {
     display: inline-block;
     height: 100%;
     width: 60%;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+div a {
+    text-decoration: none;
 }
 
 section {
     display: block;
-    margin: 10px;
-    
+    margin: 15px;
+    width: 100%;
 }
 
-#horiseon {
-    justify-self: center;
-}
+/* section h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+} */
 
 .works h2 {
     display: inline;
-    color:#dde2e7;
-    background-color: #0c0c0c;
+    color: #355531;
     text-align: center;
     font-size: 28px;
+    width: 500px;
+}
+
+.blocks {
+    border: 6px solid #acb0aa;
+    border-radius: 10px;
+    width: 100%;
     padding: 10px;
+    text-align: center;
 }
 
 #bootcamp {
@@ -297,28 +322,20 @@ section {
     margin-right: 20px;
 }
 
-
-
-.blocks {
-    border: 6px solid #0c0c0c;
-    border-radius: 10px;
-    width: 100%;
-    padding: 10px;
-}
-
 #screenshot {
-    display: inline-flex;
-    width: 95%;
+    display: inline;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
 }
 
 footer {
     width: 100%;
     height: 150px;
-    margin: 20px;
     padding: 10px;
     border-top: 3px solid #fff;
+    background-color: #576356; 
 }
 
 .footer h2 {
@@ -327,6 +344,8 @@ footer {
     font-size: 40px;
     margin-top: 50px;
     margin-right: 260px;
+    margin-left: 200px;
+    color: #dde2e7;
 }
 
 footer ul li {
@@ -340,6 +359,7 @@ footer ul li {
     display: inline;
     font-size: 25px;
     margin: 60px;
+    color: #dde2e7;
 }
   
   @media screen and (max-width: 1279px) {
