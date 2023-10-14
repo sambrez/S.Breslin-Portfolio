@@ -1,3 +1,4 @@
+/* custom css properties */
 :root {
     --color-1: #355531; 
     --color-2: #576356; 
@@ -35,6 +36,7 @@ h1 {
     text-align: left;
 }
 
+/* parent must contain flex display */
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -74,6 +76,7 @@ main {
     height: 100%;
 }
 
+/* sidebar of the main section of the page */
 aside {
     display: inline-block;
     height: auto;
@@ -98,16 +101,17 @@ aside h2 {
     max-width: 100%;
     justify-content: center;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 aside p {
-    font-size: 22px;
+    font-size: 18px;
     color: var(--color-1);
     text-align: center;
     margin-top: 30px;
 }
 
+/* contains the majority of the body of the page */
 div {
     display: flex;
     flex-wrap: wrap;
@@ -158,6 +162,7 @@ section {
     text-align: center;
 }
 
+/* following are id selectors for specific projects listed */
 #bootcamp {
     width: 400px;
     margin-left: 20px;
@@ -191,6 +196,7 @@ section {
     padding: 10px;
 }
 
+/* contains all contact information */
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -229,6 +235,7 @@ footer {
     color: var(--color-4);
 }
 
+/* addresses page responsiveness to screen size */
 @media screen and (max-width: 992px) {
     main,
     nav {
